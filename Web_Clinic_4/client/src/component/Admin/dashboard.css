@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+.Main{
+    position: relative;
+    left: 280px;
+    transition: .3s ease;
+    width: calc(100% - 280px);
+    height: 100%;   
+    padding: 80px 24px;
+    font-family: 'Poppins', sans-serif; 
+    z-index: 10;
+}
+
+.Main .main-content{
+    width: 100%;
+}
+
+.Main .main-content .head-title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+
+.Main .main-content .head-title .left h1{
+    font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.Main .main-content .head-title .left .breadcrumb{
+    display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+
+.Main .box-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+}
+
+.Main .box-info li{
+    padding: 24px;
+    background-color: white;
+    /* #F9F9F9 */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.Main .box-info li .fa-solid{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .box-info li:nth-child(1) .fa-solid{
+    background-color: #CAECFF;
+    color: #1689CB;
+}
+
+.Main .box-info li:nth-child(2) .fa-solid{
+    background-color: #FBE2FF;
+    color: #DC39E7;
+}
+
+.Main .box-info li:nth-child(3) .fa-solid{
+    background-color: #E2FFE4;
+    color: #59905D;
+}
+
+.Main .box-info li .text h3{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.Main .graph-data{
+    margin-top: 24px;
+    min-width: 327px; 
+    width:100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Main .graph-data .graph-topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.Main .graph-data .chart{
+    margin-top: 20px;
+    height: 400px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .Main{
+        width: 100%;
+        left: 0;
+    }
+
+    .Main.sidebarOpen{
+        position: relative;
+        left: 210px;
+        transition: .3s ease;
+        width: calc(100% - 280px);
+        height: 100%;   
+        
+    }
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.Personacontainer {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 36px;
+    display: flex;
+    gap: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.Personacontainer .Persona-left{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Personacontainer .Persona-right{
+    background-color:white;
+    border-radius: 7px;
+    width: calc(100% - 20px);
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Personacontainer .Persona-left .profilehead{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Personacontainer .Persona-left .profilehead img{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.Personacontainer .Persona-left .profilehead .name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Personacontainer .Persona-left .profilehead .line{
+    margin-top: 15px;
+    width: calc(100% - 30px);
+    cursor: none;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.Personacontainer .Persona-left .simpledetail{
+    display: flex;
+    flex-direction: column;
+    /* background: lightcoral; */
+}
+
+.Personacontainer .Persona-left .simpledetail .line{
+    margin: 8px auto 0 auto ;
+    width: calc(100% - 30px);
+    cursor: none;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.Personacontainer .Persona-left .simpledetail .simpledata{
+    width: 100%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.Personacontainer .Persona-left .simpledetail .simpledata:first-child{
+    margin-top: 25px;
+}
+
+
+.Personacontainer .Persona-left .simpledetail .simpledata .topic{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.Personacontainer .Persona-left .simpledetail .simpledata .topic .fa-solid{
+    font-size: 20px;
+    min-width: 40px;
+}
+
+.Personacontainer .Persona-left .simpledetail .simpledata .topic .text{
+    font-size: 16px;
+}
+
+.Personacontainer .Persona-left .simpledetail .simpledata .data{
+    display: flex;
+    align-items: center;
+    color : #6c757d;
+    font-size: 14px;
+    width: 110px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Personacontainer .Persona-right .patientdetail{
+    width: 100%;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.Personacontainer .Persona-right .patientdetail .line{
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    cursor: none;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.Personacontainer .Persona-right .patientdetail .patientdata{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.Personacontainer .Persona-right .patientdetail .patientdata .topic{
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.Personacontainer .Persona-right .patientdetail .patientdata .topic .fa-solid{
+    font-size: 25px;
+    min-width: 50px;
+}
+
+.Personacontainer .Persona-right .patientdetail .patientdata .topic .text{
+    font-size: 16px;
+}
+
+.Personacontainer .Persona-right .patientdetail .patientdata .data{
+    display: flex;
+    align-items: center;
+    color : #6c757d;
+    font-size: 14px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Personacontainer .Persona-right .contactfooter{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Personacontainer .Persona-right .contactfooter .text{
+    width: fit-content;
+    margin-left: 30px;
+    font-size: 14px;
+    color : #6c757d;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+
+@media screen and (max-width: 1100px) {
+    .Personacontainer {
+        flex-direction: column;
+    }
+    .Personacontainer .Persona-left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Personacontainer .Persona-right{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Personacontainer .Persona-right .patientdetail .patientdata{
+        height: 100px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic{
+        width: 120px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic .fa-solid{
+        font-size: 20px;
+        min-width: 40px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic .text{
+        font-size: 13px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .data{
+        font-size: 11px;
+        width: 130px;
+    }
+    .Personacontainer .Persona-right .contactfooter .text{
+        font-size: 13px; 
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .Personacontainer .Persona-right .patientdetail .patientdata{
+        height: 100px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic{
+        width: 120px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic .fa-solid{
+        font-size: 20px;
+        min-width: 40px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .topic .text{
+        font-size: 14px;
+    }
+    .Personacontainer .Persona-right .patientdetail .patientdata .data{
+        font-size: 12px;
+        width: 150px;
+    }
+    .Personacontainer .Persona-right .contactfooter .text{
+        margin-left: 8px;
+        font-size: 12px; 
+    }
+}

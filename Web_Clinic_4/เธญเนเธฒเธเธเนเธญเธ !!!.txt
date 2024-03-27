@@ -1,0 +1,29 @@
+แก้ .env
+
+(server)
+ENV_PORT = 5555
+ENV_DB_HOST = 'db'
+ENV_DB_USER = 'root'
+ENV_DB_PASS = 'MYSQL_ROOT_PASSWORD'
+ENV_DB_TABLE = 'smart_clinic'
+
+(front)
+VITE_API_SERVER = "http://192.168.15.227:5555"
+VITE_API_FLASK = "http://192.168.15.227:5558"
+VITE_JSON_SERVER = "http://192.168.15.227:5559"
+
+(flask)
+ใน app.py บรรทัด 250
+audio_path = f'http://192.168.15.227:5558/question_voice/{fname}'
+
+บรรทัด 70 ไป uncomment ใช้ DB ให้ถูก
+
+(ใน client)
+VITE_API = "http://192.168.15.227:5555"
+
+
+จำไม่ได้ว่าในเครื่อง SERVER ที่มอ 
+Web_Clinic_3
+
+ได้แก้อะไรอีกมั้ยใน Dockerfile , compose
+ไปดูละลอกให้ตรงกัน

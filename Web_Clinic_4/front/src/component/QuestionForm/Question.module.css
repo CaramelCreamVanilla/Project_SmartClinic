@@ -1,0 +1,203 @@
+/* 
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  } */
+
+
+
+/* GPT GEN */
+/* Question.module.css */
+
+.questionnaireForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 22px; /* Adjust based on actual visibility tests */
+}
+
+.questionContainer {
+  width: 80%;
+  max-width: 600px; /* Adjust width for better layout on large screens */
+}
+
+.alertMessage {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.questionText {
+  font-size: 28px; /* Larger font size for question text */
+  margin-bottom: 20px;
+}
+
+.toggleSwitch, .anatomy, .audioForm {
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px; /* Larger switch for easier interaction */
+  height: 54px; /* Larger switch for easier interaction */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px; /* Rounded corners for the slider */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 46px; /* Slightly smaller than container for margin */
+  width: 46px; /* Slightly smaller than container for margin */
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%; /* Circular slider */
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(46px);
+}
+
+.option {
+  margin: 10px 0;
+}
+
+.radioInput {
+  margin-right: 10px;
+  height: 24px; /* Larger for easier interaction */
+  width: 24px; /* Larger for easier interaction */
+}
+
+.radioLabel {
+  font-size: 24px; /* Larger font size for readability */
+}
+
+.nextButton {
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nextButton:hover  {
+  background-color: #0056b3;
+}
+
+.previousButton {
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #ff3300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.previousButton:hover {
+  background-color: #bd2600;
+}
+
+.submitButton {
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #51ad6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.submitButton:hover {
+  background-color: #3d8051;
+}
+
+.switchLabel {
+  margin-left: 15px;
+  font-size: 24px; /* Consistent font size for labels */
+}

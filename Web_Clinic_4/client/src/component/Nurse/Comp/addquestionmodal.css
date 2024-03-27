@@ -1,0 +1,251 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(100vW);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    /* height: 500px; */
+    border-radius: 5px;
+    z-index: 1051;
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+.modal-content input::placeholder {
+    font-size: 12px;
+}
+
+.modal-content p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.modal-content .fa-solid.fa-xmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.formaddquestion{
+    margin-top: 30px;
+}
+
+
+.formaddquestion .input-group label {
+    display: block;
+}
+
+.formaddquestion .one-group-horizontal {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.formaddquestion .one-group-horizontal .input-group {
+    width: 100%;
+}
+
+
+.formaddquestion .one-group-horizontal .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.formaddquestion .one-group-horizontal:nth-child(3)
+{
+    margin-bottom: 10px;
+}
+/* .formaddquestion .one-group-horizontal .input-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+} */
+
+.formaddquestion .topic-choices{
+    font-size: 13px;
+}
+
+.formaddquestion .choiceinput{
+    width: 100%;
+    margin-top: 6px;
+}
+
+.formaddquestion .choiceinput input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.formaddquestion .two-group-horizontal .input-group input:focus {
+    border: 2px solid grey;
+}
+
+.formaddquestion .one-group-horizontal .input-group input:focus {
+    border: 2px solid grey;
+}
+
+.formaddquestion .input-group select {
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group .btnadduser {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group .btnadduser input {
+    background-color: #34B241;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-group .btnadduser input:nth-child(2) {
+    background-color: #F12E2E;
+}
+
+.my-custom-swal {
+    width: 300px;
+    /* Your desired width */
+    height: 300px;
+    /* Your desired height */
+}
+
+@media screen and (max-width: 576px) {
+
+    .modal-content {
+        width: 350px;
+    }
+
+    .modal-content input::placeholder {
+        font-size: 10px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    
+    }
+    .formaddquestion-header {
+        margin-top: 13px;
+    }
+
+    .formaddquestion-header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .formaddquestion-header .input-header .input-group:nth-child(2){
+        margin-top: 3px;
+    }
+
+    .formaddquestion-header .input-header .input-group label {
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .formaddquestion-header .input-group input {
+        padding: 4px 10px;
+    }
+
+    .formaddquestion .two-group-horizontal {
+        margin-top: 5px;
+    }
+
+    .formaddquestion .one-group-horizontal {
+        margin-top: 5px;
+    }
+
+    .formaddquestion .two-group-horizontal .input-group input {
+        padding: 4px 10px;
+    }
+
+    .formaddquestion .one-group-horizontal .input-group input {
+        padding: 6px;
+    }
+    
+    .formaddquestion .one-group-horizontal:nth-child(4) .input-group input,
+.formaddquestion .one-group-horizontal:nth-child(6) .input-group input
+{
+    padding: 6px;
+}
+
+    .formaddquestion .input-group select {
+        padding: 4px 10px;
+    }
+
+    .input-group label {
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .button-group .btnadduser input {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.ContainnerMedHis {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ContainnerMedHis .MedHisMenu {
+    /* background: red; */
+    width: 540px;
+}
+
+.ContainnerMedHis .MedHisDetail {
+    background: white;
+    width: 100%;
+    /* height: calc(100vh - 250px); */
+    min-width: 350px;
+    border-radius: 7px;
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea {
+    display: flex;
+    align-items: center;
+
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea .searchbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ContainnerMedHis .MedHisMenu .searchboxarea .searchbox .search-input {
+    font-size: 14px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    /* background: green; */
+    flex: 1;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist .text {
+    margin-left: 10px;
+}
+
+.ContainnerMedHis .MedHisMenu .HistoryList .boxlist .fa-solid {
+    margin-right: 10px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-header {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+    font-size: 23px;
+    font-weight: 400;
+    display: flex;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-header .text {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo:last-child {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo .Meddata {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data .Meddatainfo .MedInfo {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Kanit', sans-serif;
+    color: #5E5E5E;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two .Meddatainfo {
+    margin-top: 10px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two .Meddatainfo:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two .Meddatainfo:last-child {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two .Meddatainfo .Meddata {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-two .Meddatainfo .MedInfo {
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: #5E5E5E;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-three {
+    margin-top: 25px;
+    display: flex;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-three .kioskdata {
+    display: flex;
+    gap: 15px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-three .kioskdata .topic {
+    margin-left: 20px;
+    min-width: 140px;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-three .kioskdata .data {
+    font-family: 'Kanit', sans-serif;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-data-three .kioskdata .data .question{
+    font-weight: 500;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-anatomy {
+    display: flex;
+    justify-content: center;
+}
+
+.ContainnerMedHis .MedHisDetail .MedHisDetail-anatomy div {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.9);
+    /* Scale down to 80% of the original size */
+    margin: 0px 40px 10px 40px;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .ContainnerMedHis .MedHisMenu {
+        width: 100%;
+    }
+
+    .ContainnerMedHis .MedHisDetail {
+        display: none;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .boxlist.changeborder {
+        border-radius: 7px 7px 0px 0px;
+    }
+
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails {
+        display: block;
+        background: white;
+        width: 100%;
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-header {
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-header .text {
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data .Meddatainfo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data .Meddatainfo .Meddata {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data .Meddatainfo .MedInfo {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Kanit', sans-serif;
+        color: #5E5E5E;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-two {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-two .Meddatainfo {
+        margin-top: 5px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-two .Meddatainfo .Meddata {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-two .Meddatainfo .MedInfo {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Kanit', sans-serif;
+        color: #5E5E5E;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-three {
+        margin-top: 15px;
+        font-size: 14px;
+        display: flex;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-three .kioskdata {
+        display: block;
+        gap: 15px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-three .kioskdata .topic {
+        margin-left: 20px;
+        min-width: 140px;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-three .kioskdata .data {
+        margin-left: 20px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-data-three .kioskdata .data .question{
+        font-weight: 500;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-anatomy {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .ItemDetails .MedHisDetail-anatomy div {
+        margin: 20px 40px 10px 40px;
+        transform: scale(0.7);
+        transform-origin: top center;
+        margin-bottom: calc(-25%);
+    }
+
+    .ContainnerMedHis .MedHisMenu .HistoryList .boxlist .fa-solid {
+        transform: rotate(90deg);
+    }
+
+
+}

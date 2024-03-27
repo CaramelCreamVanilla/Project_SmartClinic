@@ -1,0 +1,37 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-input, .login-button {
+    font-size: 24px; /* Larger font size for better visibility */
+    padding: 15px; /* Larger padding for easier interaction */
+    border-radius: 5px; /* Aesthetic rounded corners */
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alert-message {
+    margin-top: 20px;
+    font-size: 22px;
+    color: red; /* Default color for error messages */
+  }
+  

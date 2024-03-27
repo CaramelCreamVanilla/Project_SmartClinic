@@ -1,0 +1,176 @@
+.informationuser-header{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.informationuser-header .picture{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.informationuser-header img{
+    margin-top: 3px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.informationuser-header .box-header{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informationuser-header .box-header .boxinfo:nth-child(2){
+    margin-top: 10px;
+}
+
+.informationuser-header .boxinfo{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1.5px solid #8F8F8F;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+    background: white;
+}
+
+.informationuser-header .box-header .boxinfo .infohead{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.informationuser-header .boxinfo .fa-solid{
+    font-size: 12px;
+    color: #0BAABC;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informationuser-header .boxinfo .title{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    color: #8A8A8A;
+}
+
+.informationuser-header .box-header .boxinfo .infodetail{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1px;
+    margin-left: 30px;
+    height: 50px;
+    line-height: 1;
+}
+
+.informationuser{
+    margin-bottom: 5px;
+}
+
+.informationuser .two-group-info{ 
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.informationuser .two-group-info:nth-child(2){ 
+    margin-top: 10px;
+}
+
+.informationuser .two-group-info .boxinfo{
+    width: 50%;
+    border-radius: 5px;
+    border: 1.5px solid #8F8F8F;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+    background: white;
+}
+
+.informationuser .two-group-info .boxinfo .infohead{
+    display: flex;
+    align-items: center;
+}
+
+.informationuser .two-group-info .boxinfo .fa-solid{
+    font-size: 12px;
+    color: #0BAABC;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informationuser .two-group-info .boxinfo .title{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    color: #8A8A8A;
+}
+
+.informationuser .two-group-info .boxinfo .infodetail{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1px;
+    margin-left: 30px;
+    margin-bottom: 7px;
+    line-height: 1;
+}
+
+.informationuser .one-group-info{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.informationuser .one-group-info .boxinfo{
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid #8F8F8F;
+    outline: none;
+    box-shadow: 0px 0px 20px -18px;
+    background: white;
+}
+
+.informationuser .one-group-info .boxinfo .infohead{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.informationuser .one-group-info .boxinfo .fa-solid{
+    font-size: 12px;
+    color: #0BAABC;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informationuser .one-group-info .boxinfo .title{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    color: #8A8A8A;
+}
+
+.informationuser .one-group-info .boxinfo .infodetail{
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1px;
+    margin-left: 30px;
+    line-height:1;
+    margin-bottom: 7px;
+}

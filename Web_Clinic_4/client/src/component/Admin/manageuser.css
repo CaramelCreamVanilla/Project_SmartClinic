@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* styles.css */
+
+.functable {
+  width: 100%;
+  min-width: 327px;
+  /* background-color: green; */
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.functable .btnadduser{
+  /* background-color: red; */
+  min-width: 200px;
+}
+
+.functable .btnadduser input {
+  background-color: #34B241;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.functable .searchboxandropdown {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 50px;
+}
+
+.functable .searchboxandropdown .searchbox {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
+  max-width: 200px;
+}
+
+.functable .searchboxandropdown .searchbox .search-input {
+  font-size: 16px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+}
+
+.functable .searchboxandropdown .searchbox .search-input::placeholder,.functable .searchboxandropdown .searchbox .fa-solid {
+  color: #A9A9A9;
+}
+
+.functable .searchboxandropdown .dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.functable .searchboxandropdown .dropdown label{
+  min-width: 50px;
+}
+
+.functable .searchboxandropdown .dropdown select{
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+.my-table {
+  width: 100%;
+  min-width: 330px;
+}
+
+.iconintable {
+  display: flex;
+  justify-content: left;
+  font-size: 18px;
+  gap: 25px;
+}
+
+.iconintable .fa-solid.fa-id-card-clip {
+  color: #6392D5;
+  cursor: pointer;
+}
+
+.iconintable .fa-solid.fa-pen-to-square {
+  color: #AB19C1;
+  cursor: pointer;
+}
+
+.iconintable .fa-solid.fa-trash-can {
+  color: red;
+  cursor: pointer;
+}
+
+.imgintable {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.imgintable img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.imgintable .profiletext {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.imgintable .profiletext p:nth-child(1) {
+  font-weight: bold;
+}
+
+.imgintable .profiletext p:nth-child(2) {
+  font-size: 12px;
+  color: #8A8A8A;
+}
+
+.sexintable {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 2rem;
+  text-align: center1;
+}
+
+.sexintable.male {
+  background-color: #CAECFF;
+  color: #1689CB;
+}
+
+.sexintable.female {
+  background-color: #FBE2FF;
+  color: #DC39E7;
+}
+
+
+.MuiTableCell-root.MuiTableCell-head.MuiTableCell-sizeMedium.tss-10syd3x-MUIDataTableHeadCell-root.tss-gm6zfk-MUIDataTableHeadCell-fixedHeader.css-1bigob2{
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 12px 10px;
+}
+
+table th:nth-child(1) {
+  /* background-color: red; */
+
+}
+
+table th:nth-child(1) div {
+  margin-left: 10px;
+
+}
+
+/* .tss-178gktx-MUIDataTableHeadCell-contentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.tss-1akey0g-MUIDataTableHeadCell-data {
+  text-transform: none;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+}
+
+.my-table td,
+.my-table th {
+  text-align: left;
+  /* border: 1px solid #ddd;  */
+  padding: 8px 10px;
+}
+
+/* .my-table td:nth-child(1){
+  max-width: 100px;
+} */
+
+.my-table td,
+.my-table th {
+  text-align: left;
+  /* border: 1px solid #ddd;  */
+  padding: 8px;
+}
+
+.my-table th {
+  background-color: #F3F3F3;
+  /* Example header background */
+  color: white;
+}
+
+

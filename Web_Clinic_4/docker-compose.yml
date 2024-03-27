@@ -1,0 +1,109 @@
+version: '3.3'
+services:
+  server:
+    build: ./server
+    container_name: backend_web_rot
+    image: backend_web_rot
+    ports:
+      - '5555:5555'
+    volumes:
+      - ./server:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    depends_on:
+      - db
+    env_file: 
+      - ./server/.env
+
+  client:
+    build: ./client
+    container_name: frontend_web_rot
+    image: frontend_web_rot
+    ports:
+      - '5556:5556'
+    volumes:
+      - ./client:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    stdin_open: true
+    tty: true
+    depends_on:
+      - server
+    env_file:
+      - ./client/.env
+
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: smart_clinic
+      MYSQL_USER: MYSQL_USER
+      MYSQL_PASSWORD: MYSQL_PASSWORD
+    ports:
+      - "9906:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+
+  backend:
+    build: ./flask
+    container_name: backend_kiosk_rot
+    image: backend_kiosk_rot
+    ports:
+      - '5558:5558'
+    volumes:
+      - ./flask:/usr/src/app
+      - /usr/src/app/__pycache__
+      - /usr/src/app/uploads
+    environment:
+      - MYSQL_ROOT_PASSWORD=MYSQL_ROOT_PASSWORD
+      - MYSQL_DATABASE=smart_clinic
+      - MYSQL_USER=MYSQL_USER
+      - MYSQL_PASSWORD=MYSQL_PASSWORD
+    depends_on:
+      - db
+
+  frontend:
+    build: ./front
+    container_name: frontend_kiosk_rot
+    image: frontend_kiosk_rot
+    ports:
+      - '5557:5557'
+    volumes:
+      - ./front:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+      - server
+    env_file:
+      - ./front/.env
+
+  JSONserver:
+    build: 
+      context: ./JSONserver
+      dockerfile: Dockerfile
+    container_name: jsonserver_rot_2
+    image: jsonserver_rot
+    ports:
+      - '5559:5559'
+    volumes:
+      - ./JSONserver:/app
+      
+volumes:
+  db_data: {}
+  node_modules: {}
+  uploaded_images: {}
+
+networks:
+  default:
+    name: shared_network
+    driver: bridge
